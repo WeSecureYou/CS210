@@ -86,7 +86,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Cloud Nexus - CS210 Confidential File Sharing Platform</h1>
+        <h1>Cloud Nexus | CS210 Confidential File Sharing Platform</h1>
         <div id="fileListContainer">
             <div class="loading">Loading files...</div>
         </div>
@@ -94,14 +94,14 @@
 
     <script>
         // Replace these values with your GitHub information
-        const GITHUB_USERNAME = 'YOUR_GITHUB_USERNAME';
-        const REPO_NAME = 'YOUR_REPO_NAME';
-        const FOLDER_NAME = 'shared-files'; // The folder where you'll store files
+        const GITHUB_USERNAME = 'WeSecureYou';
+        const REPO_NAME = 'CS210';
+        const FOLDER_NAME = 'Labs'; // The folder where you'll store files
 
         async function fetchFiles() {
             try {
                 const response = await fetch(
-                    `https://api.github.com/repos/WeSecureYou/CS210/contents/Labs`
+                    `https://api.github.com/repos/${GITHUB_USERNAME}/${REPO_NAME}/contents/${FOLDER_NAME}`
                 );
                 
                 if (!response.ok) throw new Error('Failed to fetch files');
