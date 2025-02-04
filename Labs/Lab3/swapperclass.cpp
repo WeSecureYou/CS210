@@ -22,9 +22,9 @@ void my_class<Ttype>::printem(){
 	cout << "First value is: " << x << " Second value is: " << y << endl;
 }
 
-template my_class <int>;
-template my_class <double>;
-template my_class <char>;
+template class my_class <int>;
+template class my_class <double>;
+template class my_class <char>;
 
 
 
